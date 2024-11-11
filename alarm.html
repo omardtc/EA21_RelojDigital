@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ALARM</title>
+</head>
+<body onmouseover="Diga()">
+    <p id="escribe"><script type="text/javascript">
+		function Diga(){
+			var now = new Date();
+			document.getElementById("escribe").innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+			console.log("HORA:" + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+		}
+		setInterval(Diga, 1000);
+	</script>
+</p>
+</body>
+</html
