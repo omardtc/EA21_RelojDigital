@@ -4,6 +4,36 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>ALARM</title>
+	<style type="text/css">
+		body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+}
+
+#escribe {
+    font-size: 3em;
+    color: #333;
+    padding: 20px;
+    border: 3px solid #4CAF50;
+    border-radius: 15px;
+    background-color: #e7ffe7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: fit-content;
+    transition: all 0.3s;
+}
+
+#escribe:hover {
+    background-color: #d4ffd4;
+    color: #2e7d32;
+    transform: scale(1.05);
+}
+	</style>
 </head>
 <body onmouseover="Diga()">
     <p id="escribe"><script type="text/javascript">
