@@ -48,13 +48,20 @@
 </p>
 	<p id="mensaje">
 		<script type="text/javascript">
-			function Mensaje(){
-				var now=new Date();
-				var hora=now.getHours();
-				var MSG=document.getElementById("mensaje").innerHTML;
-				if(hora>=19 || hora<=4) MSG="BUENAS NOCHES";
-				setInterval(Mensaje, 1000);
-			}
+			  function Mensaje() {
+            var now = new Date();
+            var hora = now.getHours();
+            var MSG = "";
+            if (hora >= 19 || hora < 5) {
+                MSG = "BUENAS NOCHES";
+            } else if (hora >= 12 && hora < 19) {
+                MSG = "BUENAS TARDES";
+            } else {
+                MSG = "BUENOS DÍAS";
+            }
+            document.getElementById("mensaje").innerHTML = MSG;
+        }
+			setInterval(Mensaje, 1000);
 		</script>
 	</p>
 </body>
