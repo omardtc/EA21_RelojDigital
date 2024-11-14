@@ -39,11 +39,23 @@
     <p id="escribe"><script type="text/javascript">
 		function Diga(){
 			var now = new Date();
-			document.getElementById("escribe").innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+			if(now.getSeconds()<10) document.getElementById("escribe").innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + "0" + now.getSeconds();
+			else document.getElementById("escribe").innerHTML = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
 			console.log("HORA:" + now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
 		}
 		setInterval(Diga, 1000);
 	</script>
 </p>
+	<p id="mensaje">
+		<script type="text/javascript">
+			function Mensaje(){
+				var now=new Date();
+				var hora=now.getHours();
+				var MSG=document.getElementById("mensaje").innerHTML;
+				if(hora>=19 || hora<=4) MSG="BUENAS NOCHES";
+				setInterval(Mensaje, 1000);
+			}
+		</script>
+	</p>
 </body>
-</html
+</html>
