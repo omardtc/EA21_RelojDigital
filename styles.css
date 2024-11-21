@@ -1,12 +1,19 @@
-/* Estilo del reloj */
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f0f0f5;
+}
+
+h1 {
+    font-size: 2em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 #escribe {
